@@ -1,6 +1,3 @@
-
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,65 +9,48 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <section class="game">
-        <!--Title -->
-        <div class="title t-p">Rock Paper Scissors</div>
-<br><br>
-          <!--Display Score of player and computer -->
-        <div class="score">
-            <div class="playerScore">
-                <h2 class="playerScore">Player</h2>
-                <p class="p-count count playerScore">0</p>
-
+        <section class="game">
+            <!-- title -->
+            <div class="title">
+                <h1 class="main">Rock Paper Scissors</h1>
             </div>
-            <div class="computerScore mb-5">
-                <h2 class="computerScore">Computer</h2>
-                <p class="c-count count computerScore">0</p>
-
+            <!-- scoreboard Display for User and Ai -->
+            <div class="score">
+                <div class="playerscore">
+                    <h2>Player</h2>
+                    <p class="p-count count"> 0 </p>
+                </div>
+                <div class="computerscore">
+                    <h2>Computer</h2>
+                    <p class="c-count count"> 0 </p>
+                </div>
             </div>
-        </div>
-                <div class="result"></div>
+            <!-- Instructions -->
+            <div class="move coolm">Choose your move</div>
+            <br><br>
+            <!-- player selection buttons -->
+            <div class="options">
+                <button onClick="userChoice(0)" class="rock poption">Rock</button>
+                <button onClick="userChoice(1)" class="paper poption">Paper</button>
+                <button onClick="userChoice(2)" class="scissors poption">Scissors</button>
+            </div>
+            <!-- Show result of round -->
 
-        <div class="move"></div>
+            Your choice: <span class="userChoice"></span> <br />
+            Computer: <span class="computerChoice"></span>
 
-          <!--Number of moves left before game ends -->
-        <div class="movesleft">Moves Left: 10 </div>
+            <div class="result"></div>
 
-          <!--Options available to player to play game -->
-        <div class="options">
+            <!--Reset Scoreboard-->
+            <div>
+                <button onClick="resetGame()" class="reset"> Reset </button>
+            </div>
 
-          <div class="container rpc-img">
-            <img src="https://talksport.com/wp-content/uploads/sites/5/2021/06/crop-822912.jpg?strip=all&w=836&quality=100" alt="Snow">
-            <button class="rock">Rock</button>
-          </div>
-
-          <div class="container rpc-img">
-            <img src="https://c.ndtvimg.com/2022-03/06f6lva8_will-smith-slaps-chris-rock_625x300_29_March_22.jpg" alt="Paper">
-            <button class="paper">Paper</button>
-          </div>
-
-          <div class="container rpc-img">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Standard_scissors.jpg" alt="Scissors">
-            <button class="scissor">Scissors</button>
-          </div>
-
-        </div>
-<div>
-  <h2>If you win:<button id="btnParty" type="button">Party!!</button>
-<div id="tsparticles"></h2>
-</div>
-<div>
-  <h2>Dont Cheat 🙄</h2>
-</div>
-          <!--Final result of game -->
-
-
-          <!--Reload the game -->
-        <button class="reload"></button>
-
-
-    </section>
-
+            <img class="gif" src="https://c.tenor.com/ybFs4Wu7AjcAAAAC/rockpaperscissors-rock.gif" alt="gif">
+        </section>
+        <footer class="footer">
+          Copyright @MaximZLLC
+        </footer>
     <script src="script.js"></script>
 </body>
 </html>
